@@ -82,4 +82,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Made by Mohd Fazal Khan
+**Made by Mohd Fazal Khan**
