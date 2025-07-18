@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# YoloTask
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+YoloTask is a modern, cross-platform mobile application built with [Expo](https://expo.dev) and [React Native](https://reactnative.dev). The project leverages file-based routing, custom theming, and a clean, modular architecture to provide a robust foundation for scalable app development.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Expo Router** for file-based navigation
+- **Custom Theming** with light/dark mode support
+- **Reusable UI Components**
+- **TypeScript** for type safety
+- **Pre-configured ESLint** for code quality
+- **Easy Project Reset** script for rapid prototyping
 
-   ```bash
-   npm install
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/Mohd-Fazal-khan/YoloTask.git
+   cd YoloTask
    ```
 
-2. Start the app
+2. **Install dependencies:**
 
-   ```bash
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+
+   ```sh
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   Follow the on-screen instructions to run the app on an emulator, simulator, or physical device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+YoloTask/
+  app/                # App screens and navigation
+    tabs/             # Tab-based screens
+  assets/             # Fonts and images
+  constants/          # App-wide constants (e.g., colors)
+  hooks/              # Custom React hooks
+  scripts/            # Utility scripts (e.g., reset-project.js)
+  .expo/              # Expo-generated files
+  .vscode/            # VSCode settings
+  ...
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Scripts
 
-## Learn more
+- `npm start` — Start the Expo development server
+- `npm run android` — Run the app on Android
+- `npm run ios` — Run the app on iOS
+- `npm run web` — Run the app in the browser
+- `npm run lint` — Lint the codebase
+- `npm run reset-project` — Reset the project to a blank state
 
-To learn more about developing your project with Expo, look at the following resources:
+## Theming
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The app supports both light and dark themes. Theme colors are defined in [`constants/Colors.ts`](constants/Colors.ts), and the current theme is determined using custom hooks in [`hooks/`](hooks/).
 
-## Join the community
+## Contributing
 
-Join our community of developers creating universal apps.
+Contributions are welcome! Please open issues and submit pull requests for any improvements or bug fixes.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Made by Mohd Fazal Khan
